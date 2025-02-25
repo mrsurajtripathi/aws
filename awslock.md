@@ -237,4 +237,42 @@ Which solution meets these requirements MOST cost-effectively?***
 - C). Create a snapshot when tests are completed. Terminate the DB instance and restore the snapshot when required.
 - D). Modify the DB instance to a low-capacity instance when tests are completed. Modify the DB instance again when required.
 
+>***(31) A company that hosts its web application on AWS wants to ensure all Amazon EC2 instances. Amazon RDS DB instances. and Amazon Redshift clusters are configured with tags. The company wants to minimize the effort of configuring and operating this check.
+What should a solutions architect do to accomplish this?***
+
+- A). Use AWS Config rules to define and detect resources that are not properly tagged.
+- B). Use Cost Explorer to display resources that are not properly tagged. Tag those resources manually.
+- C). Write API calls to check all resources for proper tag allocation. Periodically run the code on an EC2 instance.
+- D). Write API calls to check all resources for proper tag allocation. Schedule an AWS Lambda function through Amazon CloudWatch to periodically run the code.
+
+>***(32) A development team needs to host a website that will be accessed by other teams. The website contents consist of HTML, CSS, client-side JavaScript, and images.
+Which method is the MOST cost-effective for hosting the website?***
+
+- A). Containerize the website and host it in AWS Fargate.
+- B). Create an Amazon S3 bucket and host the website there.
+- C). Deploy a web server on an Amazon EC2 instance to host the website.
+- D). Configure an Application Load Balancer with an AWS Lambda target that uses the Express.js framework.
+
+>***(33) A company runs an online marketplace web application on AWS. The application serves hundreds of thousands of users during peak hours. The company needs a scalable, near-real-time solution to share the details of millions of financial transactions with several other internal applications. Transactions also need to be processed to remove sensitive data before being stored in a document database for low-latency retrieval.
+What should a solutions architect recommend to meet these requirements?***
+
+- A). Store the transactions data into Amazon DynamoDB. Set up a rule in DynamoDB to remove sensitive data from every transaction upon write. Use DynamoDB Streams to share the transactions data with other applications.
+- B). Stream the transactions data into Amazon Kinesis Data Firehose to store data in Amazon DynamoDB and Amazon S3. Use AWS Lambda integration with Kinesis Data Firehose to remove sensitive data. Other applications can consume the data stored in Amazon S3.
+- C). Stream the transactions data into Amazon Kinesis Data Streams. Use AWS Lambda integration to remove sensitive data from every transaction and then store the transactions data in Amazon DynamoDB. Other applications can consume the transactions data off the Kinesis data stream.
+- D). Store the batched transactions data in Amazon S3 as files. Use AWS Lambda to process every file and remove sensitive data before updating the files in Amazon S3. The Lambda function then stores the data in Amazon DynamoDB. Other applications can consume transaction files stored in Amazon S3.
+
+>***(34) A company hosts its multi-tier applications on AWS. For compliance, governance, auditing, and security, the company must track configuration changes on its AWS resources and record a history of API calls made to these resources.
+What should a solutions architect do to meet these requirements?***
+- A). Use AWS CloudTrail to track configuration changes and AWS Config to record API calls.
+- B). Use AWS Config to track configuration changes and AWS CloudTrail to record API calls.
+- C). Use AWS Config to track configuration changes and Amazon CloudWatch to record API calls.
+- D). Use AWS CloudTrail to track configuration changes and Amazon CloudWatch to record API calls.
+
+>***(35)A company is preparing to launch a public-facing web application in the AWS Cloud. The architecture consists of Amazon EC2 instances within a VPC behind an Elastic Load Balancer (ELB). A third-party service is used for the DNS. The company's solutions architect must recommend a solution to detect and protect against large-scale DDoS attacks.
+Which solution meets these requirements?***
+
+- A). Enable Amazon GuardDuty on the account.
+- B). Enable Amazon Inspector on the EC2 instances.
+- C). Enable AWS Shield and assign Amazon Route 53 to it.
+- D). Enable AWS Shield Advanced and assign the ELB to it.
 
